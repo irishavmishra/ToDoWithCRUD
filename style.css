@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5CB;
+}
+
+
+.container {
+    /* background-color: #D5CEA3; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.app {
+    background-color: #1A120B;
+    /* width: 90%; */
+    /* margin: 1rem; */
+    padding: 1rem;
+    width: min(100vw, 500px);
+    /* border-radius: 2rem; */
+}
+.app h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #E5E5CB;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #D5CEA3;
+}
+.input-box {
+    margin: 1rem 0rem 2rem 0rem;
+    background-color: #3C2A21;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E5E5CB;
+}
+.input-box input {
+    all: unset;
+    color: #E5E5CB;
+    padding: 1rem;
+    width: 80%;
+}
+.input-box button {
+    all: unset;
+    color: #D5CEA3;
+    background-color: #1A120B;
+    padding: 1rem;
+    margin: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.todo-list-item li {
+    margin: 1rem 0rem;
+    background-color: #3C2A21;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D5CEA3;
+}
+.task-text {
+    all: unset;
+    color: #D5CEA3;
+    padding: 1rem;
+    width: 80%;
+}
+.delete {
+    all: unset;
+    color: #D5CEA3;
+    background-color: #1A120B;
+    padding: 1rem;
+    margin: 0rem;
+    border-right: 1px solid #D5CEA3;
+}
+.done {
+    all: unset;
+    color: #D5CEA3;
+    background-color: #1A120B;
+    padding: 1rem;
+    margin: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+button:hover {
+    cursor: pointer;
+}
+@media only screen and (min-width: 500px) {
+    .container {
+        background-color: #D5CEA3;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .app {
+        background-color: #1A120B;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+}
